@@ -1,0 +1,53 @@
+:root {
+
+    --bg: #ffffff;
+    --bg2: #beffff;
+    --primary: #CF1E85;
+    --segundary: #9C588E;
+    --accent: #0B78A0;
+    --text: #000000;
+    --border: #ab0dc2;
+    --focus: #0d1782;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+* {
+    box-sizing: border-box; /*nada exploda da borda atual*/
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    color: var(--text);
+    background: var(--bg);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+img {
+    max-width: 80%;
+    display: block;
+    height: auto;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
+    border-radius: 10px;
+}
+
+.container {
+    width: min(1100px, 90%); /*ocupa 90% da tela*/
+    margin: 0 auto;
+}
